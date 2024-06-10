@@ -95,7 +95,7 @@ public class Course {
     
     //check wether the student has already taken this course or not
     public boolean isCourseExist(int sid, String courseNo, String course){
-        String sql = "select * from course where student id = ? and "+courseNo+" = ?";
+        String sql = "select * from course where student_id = ? and " + courseNo + " = ?";
         try {
             ps = con.prepareStatement(sql);
             ps.setInt(1, sid);
